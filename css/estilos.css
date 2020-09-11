@@ -36,7 +36,7 @@ header .navbar-brand .img-fluid {
 .bannerp {
 	/* background-color: rgba(0,0,0,0.8); */
     text-align: center;
-	background: url(/imagenes/banner.png);
+	background: url(../imagenes/banner.png);
 	/* filter:brightness(0.4); */
     background-size: cover;
     background-repeat: no-repeat;

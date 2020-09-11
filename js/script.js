@@ -1,11 +1,9 @@
 function jugar() {
 
-    var max = 11;
-    var min = 1;
     var cant_intentos = 3;
     var acerto = false;
-    var numero_aleatorio = Math.round(Math.random() * (max - min) + min);
-    var numero;
+    var producto_elegido = Colchon;
+    var producto;
 
     var nombre=document.getElementById("nombre").value;
 
@@ -18,19 +16,15 @@ function jugar() {
         while(cant_intentos>0 && acerto!=true)
         {
             cant_intentos--;
-            numero= parseInt( prompt("Ingrese el número"));
-            if (numero==numero_aleatorio)
+            producto= parseInt( prompt("Ingrese el producto"));
+            if (producto==producto_elegido)
             {
-                alert("EUREKA!!");
+                alert("ACERTASTE!!");
                 acerto=true;
             }
-            else if (numero<numero_aleatorio)
+            else if (producto<producto_elegido)
             {
-                alert("PISTA: es mayor");
-            }
-            else if (numero>numero_aleatorio)
-            {
-                alert("PISTA: es menor");
+                alert("PISTA: descanso");
             }
             else
             {
@@ -39,7 +33,6 @@ function jugar() {
 
         }
 
-        document.getElementById("rdo").innerHTML="El número era: <strong>" + numero_aleatorio + "</strong>"
+        document.getElementById("rdo").innerHTML="El producto era: <strong>" + producto_elegido + "</strong>"
     }
 
-}
