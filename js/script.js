@@ -1,38 +1,30 @@
-function jugar() {
+function jugar(){
+    producto_elegido= "colchon";
+    producto = document.getElementById('prod').value;
 
-    var cant_intentos = 3;
-    var acerto = false;
-    var producto_elegido = Colchon;
-    var producto;
 
-    var nombre=document.getElementById("nombre").value;
-
-    if(nombre=="")
+    if (producto != "")
     {
-        alert("Por favor, ingrese su  nombre para JUGAR");
-    }
-    else
-    {
-        while(cant_intentos>0 && acerto!=true)
+        intentos --;
+
+        if (producto == producto_elegido)
         {
-            cant_intentos--;
-            producto= parseInt( prompt("Ingrese el producto"));
-            if (producto==producto_elegido)
-            {
-                alert("ACERTASTE!!");
-                acerto=true;
-            }
-            else if (producto<producto_elegido)
-            {
-                alert("PISTA: descanso");
-            }
-            else
-            {
-                alert("Le quedan " + cant_intentos + " intentos");
-            }
-
+            alert("EUREKA!!");
+            acerto=true;
         }
+        else if (producto != producto_elegido)
+    	{
+            alert("PISTA: Se utiliza para descansar.");
+            alert("Le quedan " + cant_intentos + " intentos");
+		}
 
-        document.getElementById("rdo").innerHTML="El producto era: <strong>" + producto_elegido + "</strong>"
-    }
+        else if (producto != producto_elegido)
+    	{
+            alert("PISTA: Viene en varios tamaños.");
+            alert("Le quedan " + cant_intentos + " intentos");
+		}
 
+       
+    }   
+}
+            
