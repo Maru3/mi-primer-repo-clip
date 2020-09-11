@@ -1,11 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-AR">
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Distribuidora Norte cuenta con una gran variedad de marcas que se adaptan a sus necesidades, tenemos todo para su hogar, desde colchones hasta sillones. Nos caracterizamos por los buenos precios y la mejor atencion. Estamos en Villa Nueva, Córdoba."/>
+    <meta name="author" content="Maria de los Ángeles Orellano" />
+    <meta name="keywords" content="muebleria, colchoneria, colchones, sommiers, cama, cucheta, respaldo, almohadas, sillas, mesas, sillones, muebles" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet"> -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Titulo e icono de la web -->
+    <link rel="icon" type="image/png" href="imagenes/arbol.png">    
+    <title>Distribuidora Norte</title>
 </head>
 <body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="imagenes/arbolmenu.png" style="width: 40%;" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navbar justify-content-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Quienes Somos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>        
+            </div>
+        </nav> 
+    </header> 
+    <!-- Banner -->
+	<div class="bannerp">
+		<div class="container-fluid">
+            <img src="imagenes/arbol.png" class="img-fluid" style="width: 15%; height:15%;" alt="logo del negocio">
+		    <h2><strong>Somos Distribuidora Norte</strong></h2>                
+            <h1><strong>Bienvenidos a nuestra web</strong></h1>
+		</div>
+	</div>
+	<!-- Fin del banner -->
     
+    <!-- Sección de Ofertas -->
+    <section>
+        <div class="ofertas">
+            <div class="container-fluid">
+                <header>
+                    <h1>¡Ofertas Imperdibles!</h1>
+                </header>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card shadowsBox">
+                            <img class="card-img-top" src="imagenes/oferta-1.jpg" alt="Sillon negro de ecocuero con 2 almohadones y banqueta">
+                            <div class="card-body ofertas-item">
+                                <h4 class="card-tittle">Sillon Qatar</h4>
+                                <h6 class="card-text">Sillon de 2 cuerpos con banqueta, tapizado negro de eco cuero.</h6>
+                                <p class="card-text">Precio: <strong>$21185</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadowsBox">
+                           <img class="card-img-top" src="imagenes/oferta-2.jpg" alt="Silla tapizada color lenovo combinada con respaldar estampado">
+                            <div class="card-body ofertas-item">
+                                <h4 class="card-tittle">Silla Cali</h4>
+                                <h6 class="card-text">Silla tapizada en lenovo, combinada con respaldar estampado.</h6>
+                                <p class="card-text">Precio: <strong>$10900</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadowsBox">
+                            <img class="card-img-top" src="imagenes/oferta-3.jpg" alt="Mesa de madera oscura y 8 sillas tapizadas color lenovo beige">
+                            <div class="card-body ofertas-item">
+                                <h4 class="card-tittle">Mesa doble canal</h4>
+                                <h6 class="card-text">Mesa doble canal de 2.00 x 1.00 de paraíso o Guatambú.</h6>
+                                <p class="card-text">Precio: <strong>$27560</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>     
+        </div> 
+    </section>
+    <!-- Fin de sección de Ofertas -->
+    <!-- Sección de ubicación y redes-->
+    <section>
+        <div class="container-fluid">
+            <header>
+                <h1>¿Donde nos encontras?</h1>
+            </header>
+            <div class="row">
+                <div class="col-md-3" style="text-align: center;">
+                    <h3>Dirección</h3>
+                    <p class="address">Avenida Carranza y Lima,<br>Villa Nueva, Córdoba, Argentina.</p>
+                    <br>
+                    <h3>Teléfono</h3>
+                    <p class="address">+549 353 5643804</p>
+                    <br>
+                    <h3>Email</h3>
+                    <p class="address"><a href="mailto:distribuidora1norte@gmail.com">distribuidora1norte@gmail.com</a></p>
+                </div>
+                <div class="col-md-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13471.243147619447!2d-63.2436022!3d-32.4242261!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1901d2d2b60b6feb!2sMuebler%C3%ADa%20Distribuidora%20Norte!5e0!3m2!1ses-419!2sar!4v1599838380314!5m2!1ses-419!2sar" width="500" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="col-md-5" style="text-align: center;">
+                    <style>
+                        .img-fluid{
+                            width: 30%;
+                            margin: 10px;
+                            padding: 20px;
+                        }
+                    </style>
+                    <h3><strong>Nuestras Redes Sociales</strong></h3>
+                    <h6>Seguinos y enterate de todas las novedades que tenemos para vos!!</h6>
+                    <a href="https://www.facebook.com/DistribuidoraNorteVN" target="_blank"><img class="img-fluid" src="imagenes/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/distribuidora.norte/" target="_blank"><img class="img-fluid" src="imagenes/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fin de sección de ubicación y redes -->
+        <!-- Sección de contacto -->
+        <section style="padding-top: 80px;">
+            <div class="container-fluid">
+                <header>
+                    <h1>Contactate con Nosotros</h1>
+                </header>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-9 col-sm-6">
+                            <h4>Por favor llene el siguiente formulario, nos comunicaremos a la brevedad.</h4>
+                            <form action="" class="was-validated" style="margin-top: 30px;">
+                                <div class="form-group">
+                                    <label for="contactName">Nombre</label>
+                                    <input class="form-control" type="text" placeholder="Ingrese su nombre" required/>
+                                    <div class="invalid-feedback">
+                                        El nombre es requerido.
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactName">Apellido</label>
+                                    <input class="form-control" type="text" placeholder="Ingrese su apellido" required/>
+                                    <div class="invalid-feedback">
+                                        El apellido es requerido.
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactName">Teléfono</label>
+                                    <input class="form-control" type="text" placeholder="Ingrese su teléfono" required/>
+                                    <div class="invalid-feedback">
+                                        El teléfono es requerido.
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactEmail">Email</label>
+                                    <input class="form-control" type="email" placeholder="Ingrese su Email" required/>
+                                    <div class="invalid-feedback">
+                                        El email es requerido.
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactMessage">Mensaje</label>
+                                    <textarea class="form-control" rows="3" placeholder="Ingrese el mensaje" required></textarea>
+                                    <div class="invalid-feedback">
+                                        El Mensaje es requerido.
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" name="submit" class="btn btn-success">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin de sección de contacto -->
+    <!-- Sección de Footer -->
+    <footer class="container-fluid">
+        <p class="text-center">Copyright &copy;2020 <strong>Distribuidora Norte</strong>. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Fin de sección de Footer -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
